@@ -46,11 +46,12 @@ export class FMP implements Types.DataProviderInterface {
     const response = error.response;
 
     if (response.status === 429) {
-      const s = response.data['X-Rate-Limit-Retry-After-Seconds'] || 0;
-      const ms = response.data['X-Rate-Limit-Retry-After-Milliseconds'] || 0;
+      // const s = response.data['X-Rate-Limit-Retry-After-Seconds'] || 0;
+      // const ms = response.data['X-Rate-Limit-Retry-After-Milliseconds'] || 0;
 
       const err = new Types.APIError(Types.APIErrorType.QUOTA_ERROR);
-      err.retryAfterSeconds = s + ms / 1000.0;
+      // err.retryAfterSeconds = s + ms / 1000.0;
+      err.retryAfterSeconds = 10;
       throw err;
     }
 

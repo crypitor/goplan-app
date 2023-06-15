@@ -1,4 +1,4 @@
-<!--<template>-->
+<template>
 <!--  <h1 class="text-gray-700 text-3xl font-medium mb-6">-->
 <!--    Data Tables-->
 <!--  </h1>-->
@@ -28,7 +28,7 @@
 <!--      </Modal>-->
 <!--    </template>-->
 <!--  </DataTable>-->
-<!--</template>-->
+</template>
 
 <!--<script lang="ts">-->
 <!--import {defineComponent, reactive} from 'vue'-->

@@ -208,6 +208,6 @@ Parse.Cloud.beforeSubscribe(AssetPrice, async request => {
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-Parse.Cloud.beforeUnsubscribe(AssetPrice, async request => {
-  handler.unsubscribe(request.requestId);
-});
+// Parse.Cloud.beforeUnsubscribe(AssetPrice, async request => {
+//   handler.unsubscribe(request.requestId);
+// });
