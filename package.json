@@ -25,7 +25,9 @@
     "dev-link-utils": "yarn link @goplan-finance/utils",
     "dev-unlink-utils": "concurrently  -p \"[{name}]\" -n \"Backend,Frontend,Common\" -c \"yellow.bold,cyan.bold,green.bold,magenta.bold\" \"yarn --cwd backend unlink @goplan-finance/utils\"  \"yarn --cwd frontend  unlink @goplan-finance/utils\" \"yarn --cwd common unlink @goplan-finance/utils\" && yarn install --force"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@goplan-finance/utils": "1.0.7"
+  },
   "devDependencies": {
     "auto-changelog": "2.4.0",
     "concurrently": "7.4.0",
